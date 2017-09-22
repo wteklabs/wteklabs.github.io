@@ -118,9 +118,9 @@
       "resolved": "https://registry.npmjs.org/isarray/-/isarray-1.0.0.tgz"
     },
     "jquery": {
-      "version": "2.2.4",
-      "from": "jquery@2.2.4",
-      "resolved": "https://registry.npmjs.org/jquery/-/jquery-2.2.4.tgz"
+      "version": "3.2.1",
+      "from": "jquery@latest",
+      "resolved": "https://registry.npmjs.org/jquery/-/jquery-3.2.1.tgz"
     },
     "lcid": {
       "version": "1.0.0",

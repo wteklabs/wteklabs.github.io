@@ -12,7 +12,7 @@
 	/* --------------------------------------------------- */
 	/* Preloader
 	------------------------------------------------------ */ 
-   $(window).load(function() {
+   $(window).on('load', function() {
       // will first fade out the loading animation 
     	$("#loader").fadeOut("slow", function(){
 
@@ -20,7 +20,7 @@
         $("#preloader").delay(300).fadeOut("slow");
 
       }); 
-  	})
+  	});
 
 
 	/* --------------------------------------------------- */

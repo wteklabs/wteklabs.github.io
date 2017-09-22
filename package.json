@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/wteklabs/wteklabs.github.io#readme",
   "dependencies": {
-    "jquery": "^2.2.4",
+    "jquery": "^3.2.1",
     "modernizr": "^3.5.0"
   },
   "devDependencies": {
