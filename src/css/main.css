@@ -1,10 +1,5 @@
 
-/* =================================================================== 
- *
- *  Khronos v1.0 Main Stylesheet
- *  url: www.styleshout.com
- *  06-10-2016
- *  ------------------------------------------------------------------
+/* ===================================================================
  *
  *  TOC:
  *  01. webfonts and iconfonts
@@ -28,7 +23,7 @@
  *
  * ------------------------------------------------------------------- */
 @import url("./fonts.css");
-@import url("./font-awesome/css/font-awesome.css");
+@import url("~font-awesome/css/font-awesome.css");
 @import url("./micons/micons.css");
 
 
@@ -77,7 +72,7 @@ a, a:visited {
 	transition: all 0.3s ease-in-out;
 }
 a:hover, a:focus {
-	color: #000000;
+	color: #FFFFFF;
 }
 
 /* ===================================================================
@@ -360,7 +355,7 @@ img.pull-left {
 	}
 }
 
- 
+
 /* ===================================================================
  * 04. preloader - (_preloader-1.scss)
  *
@@ -824,7 +819,7 @@ header .logo a {
 	border: none;
 	width: 97px;
 	height: 84px;
-	background: url("../assets/images/logo.png") no-repeat center;
+	/*background: url("../assets/images/logo.png") no-repeat center;*/
 	background-size: 97px 84px;
 	font: 0/0 a;
 	text-shadow: none;
@@ -836,6 +831,10 @@ header .logo a {
 	transition: all 0.5s ease-in-out;
 }
 
+header .logo h1 {
+    color: white;
+    font-size: 10rem;
+}
 /* ------------------------------------------------------------------- 
  * header social - (_layout.css)  
  * ------------------------------------------------------------------- */
@@ -1702,6 +1701,15 @@ footer {
 	text-align: center;
 	padding-bottom: 12rem;
 	position: relative;
+}
+
+footer .footer-logo h1 {
+    color: rgb(51, 51, 51);
+    font-size: 10rem;
+}
+
+footer .footer-logo p {
+    font-weight: bold;
 }
 
 footer .social-wrap {

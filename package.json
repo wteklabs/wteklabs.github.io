@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/wteklabs/wteklabs.github.io#readme",
   "dependencies": {
+    "font-awesome": "^4.7.0",
     "jquery": "^3.2.1",
     "modernizr": "^3.5.0"
   },
@@ -31,9 +32,11 @@
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-polyfill": "^6.26.0",
+    "copy-webpack-plugin": "^4.0.1",
     "cross-env": "^5.0.5",
     "css-loader": "^0.28.7",
     "eslint": "^4.7.2",
+    "extract-text-webpack-plugin": "^3.0.0",
     "file-loader": "^0.11.2",
     "gh-pages": "^1.0.0",
     "html-webpack-plugin": "^2.30.1",
@@ -44,6 +47,7 @@
     "rimraf": "^2.6.2",
     "style-loader": "^0.18.2",
     "webpack": "^3.6.0",
+    "webpack-bundle-analyzer": "^2.9.0",
     "webpack-dev-server": "^2.8.2"
   }
 }
