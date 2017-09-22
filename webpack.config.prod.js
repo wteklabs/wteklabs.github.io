@@ -111,7 +111,7 @@ const webpackConfig = {
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, './src/public/index.html'),
       inject: 'body',
-      hash: true,
+      hash: false,
       minify: {
         removeAttributeQuotes: true,
         collapseWhitespace: true,
@@ -123,9 +123,16 @@ const webpackConfig = {
 
     }),
     new CopyWebpackPlugin([
-      {
-        from: 'assets'
-      }])
+        {
+          from: 'assets'
+        },
+        {
+          from: 'public'
+        }
+      ], {
+        ignore: ['*.html']
+      }
+    )
   ]
 };
 
