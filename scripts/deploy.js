@@ -14,7 +14,7 @@ fs.writeFileSync(path.join(BUILD_DIR, 'CNAME'), HOST_NAME, { flag: 'w' }, functi
 
 const ghpagesOptions = {
   branch: 'master',
-  remote: 'host',
+  remote: 'origin',
   message: 'Site content build successfully'
 };
 
