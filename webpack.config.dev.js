@@ -24,14 +24,14 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.jsx?$/,
+        test: /\.jsx?$/i,
         loader: require.resolve('babel-loader'),
         query: {
           presets: []
         }
       },
       {
-        test: /\.(scss|css)$/,
+        test: /\.(scss|css)$/i,
         use: [
           'style-loader',
           {
@@ -42,7 +42,7 @@ module.exports = {
         ]
       },
       {
-        test: /\.woff($|\?)|\.woff2($|\?)|\.ttf($|\?)|\.eot($|\?)|\.svg($|\?)|\.otf($|\?)/,
+        test: /\.woff($|\?)|\.woff2($|\?)|\.ttf($|\?)|\.eot($|\?)|\.svg($|\?)|\.otf($|\?)/i,
         loader: 'file-loader'
       },
       {

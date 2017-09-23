@@ -30,26 +30,43 @@ const webpackConfig = {
   module: {
     rules: [
       {
-        test: /\.jsx?$/,
+        test: /\.jsx?$/i,
         loader: require.resolve('babel-loader'),
         query: {
           presets: []
         }
       },
       {
-        test: /\.(scss|css)$/,
+        test: /\.(scss|css)$/i,
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
           use: ['css-loader', 'resolve-url-loader']
         })
       },
       {
-        test: /\.woff($|\?)|\.woff2($|\?)|\.ttf($|\?)|\.eot($|\?)|\.svg($|\?)|\.otf($|\?)/,
-        loader: 'file-loader'
+        test: /\.woff($|\?)|\.woff2($|\?)|\.ttf($|\?)|\.eot($|\?)|\.svg($|\?)|\.otf($|\?)/i,
+        loader: 'file-loader',
+        options: {
+          name: '/fonts/[name]_[hash:7].[ext]',
+        }
+      },
+      {
+        test: /.*\.(gif|png|jpe?g)$/i,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 8000
+            },
+          },
+        ]
       },
       {
         test: /\.(jpe?g|png|gif|svg)$/i,
-        loader: 'file-loader'
+        loader: 'file-loader',
+        options: {
+          name: '/images/[name]_[hash:7].[ext]',
+        }
       }
     ]
   },
