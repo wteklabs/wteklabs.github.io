@@ -372,7 +372,7 @@ img.pull-left {
 	width: 100%;
 }
 .no-js #preloader, .oldie #preloader {
-	display: none;
+	/*display: none;*/
 }
 #loader {
 	position: absolute;
@@ -1077,7 +1077,8 @@ header .social-links ul li a:focus {
 	line-height: 1.143;
 	color: #FFFFFF;
 	margin-bottom: 1.2rem;
-	max-width: 600px;
+	/*max-width: 600px;*/
+	max-width: inherit;
 	position: relative;
 }
 .main-content-tablecell p {
@@ -1716,8 +1717,9 @@ footer {
 
 footer .footer-logo h1 {
     color: rgb(51, 51, 51);
-    font-size: 10rem;
-	font-family: 'iori-bold', Sans-Serif;
+	font-size: 8rem;
+	letter-spacing: 1rem;
+	font-family: "techno-agony", sans-serif;
 }
 
 footer .footer-logo p {
@@ -1782,7 +1784,8 @@ footer .footer-bottom a:focus {
 
 footer .footer-bottom .footer-logo {
 	display: inline-block;
-	width: 150px;
+	/*width: 150px;*/
+	width: inherit;
 }
 
 footer .copyright {
