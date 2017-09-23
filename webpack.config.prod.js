@@ -40,22 +40,21 @@ const webpackConfig = {
         test: /\.(scss|css)$/i,
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
-          use: ['css-loader'],
-          publicPath: '/'
+          use: ['css-loader']
         })
       },
       {
         test: /\.woff($|\?)|\.woff2($|\?)|\.ttf($|\?)|\.eot($|\?)|\.svg($|\?)|\.otf($|\?)/i,
         loader: 'file-loader',
         options: {
-          name: '/fonts/[name]_[hash:7].[ext]',
+          name: 'fonts/[name]_[hash:7].[ext]',
         }
       },
       {
         test: /\.(jpe?g|png|gif|svg)$/i,
         loader: 'file-loader',
         options: {
-          name: '/images/[name]_[hash:7].[ext]',
+          name: 'images/[name]_[hash:7].[ext]',
         }
       },
       {
