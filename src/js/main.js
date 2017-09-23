@@ -1,9 +1,4 @@
-/**
- * ===================================================================
- * Main js
- *
- * -------------------------------------------------------------------
- */
+require('smoothscroll-polyfill').polyfill();
 
 (function ($) {
 
@@ -40,18 +35,9 @@
   /* Smooth Scrolling
   ------------------------------------------------------*/
   $('.smoothscroll').on('click', function (e) {
-
     e.preventDefault();
-
-    var target = this.hash,
-      $target = $(target);
-
-    $('body').stop().animate({
-      'scrollTop': $target.offset().top
-    }, 800, 'swing', function () {
-      window.location.hash = target;
-    });
-
+    const targetId = this.hash;
+    document.querySelector(targetId).scrollIntoView({ behavior: 'smooth' });
   });
 
 })(jQuery);
