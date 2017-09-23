@@ -834,7 +834,8 @@ header .logo a {
 header .logo h1 {
 	font-family: "techno-agony", sans-serif;
     color: white;
-    font-size: 8rem;
+	font-size: 8rem;
+	letter-spacing: 1rem;
 }
 /* ------------------------------------------------------------------- 
  * header social - (_layout.css)  
