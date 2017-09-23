@@ -40,7 +40,8 @@ const webpackConfig = {
         test: /\.(scss|css)$/i,
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
-          use: ['css-loader', 'resolve-url-loader']
+          use: ['css-loader'],
+          publicPath: '/'
         })
       },
       {
@@ -51,22 +52,23 @@ const webpackConfig = {
         }
       },
       {
-        test: /.*\.(gif|png|jpe?g)$/i,
-        use: [
-          {
-            loader: 'url-loader',
-            options: {
-              limit: 8000
-            },
-          },
-        ]
-      },
-      {
         test: /\.(jpe?g|png|gif|svg)$/i,
         loader: 'file-loader',
         options: {
           name: '/images/[name]_[hash:7].[ext]',
         }
+      },
+      {
+        test: /.*\.(gif|png|jpe?g)$/i,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 8000,
+              fallback: null
+            }
+          },
+        ]
       }
     ]
   },
@@ -137,7 +139,6 @@ const webpackConfig = {
         removeComments: true,
         removeEmptyAttributes: true,
       }
-
     }),
     new CopyWebpackPlugin([
         {

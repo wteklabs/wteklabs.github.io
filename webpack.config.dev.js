@@ -34,11 +34,7 @@ module.exports = {
         test: /\.(scss|css)$/i,
         use: [
           'style-loader',
-          {
-            loader: 'css-loader',
-            options: {}
-          },
-          'resolve-url-loader'
+          'css-loader'
         ]
       },
       {
