@@ -24,7 +24,6 @@
  * ------------------------------------------------------------------- */
 @import url("./fonts.css");
 @import url("~font-awesome/css/font-awesome.css");
-@import url("./micons/micons.css");
 
 
 /* ===================================================================
@@ -738,7 +737,7 @@ input::-moz-focus-inner {
 	content: none;
 }
 
-/** 
+/**
  * Stats Tab
  * ---------
  * markup:
@@ -819,7 +818,6 @@ header .logo a {
 	border: none;
 	width: 97px;
 	height: 84px;
-	/*background: url("../assets/images/logo.png") no-repeat center;*/
 	background-size: 97px 84px;
 	font: 0/0 a;
 	text-shadow: none;
@@ -996,7 +994,7 @@ header .social-links ul li a:focus {
 }
 
 #home.home-static {
-	background-image: url("../assets/images/home-bg.jpg");
+	/*background-image: url("../assets/images/home-bg.jpg");*/
 	background-repeat: no-repeat;
 	background-position: center;
 	-webkit-background-size: cover;
@@ -1254,7 +1252,7 @@ header .social-links ul li a:focus {
  * ------------------------------------------------------------------- */
 #info {
 	background: #FFFFFF;
-	background-image: url("../assets/images/info-bg.jpg");
+	/*background-image: url("../assets/images/info-bg.jpg");*/
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -1275,7 +1273,7 @@ header .social-links ul li a:focus {
 	opacity: .7;
 }
 
-/* tabs 
+/* tabs
  *-------------------------------------------- */
 #info .tabs-wrap {
 	margin: 3rem 0;
@@ -1381,7 +1379,7 @@ header .social-links ul li a:focus {
 	margin-bottom: 0;
 }
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * responsive:
  * tabs
  * ------------------------------------------------------------------- */
@@ -1427,8 +1425,8 @@ header .social-links ul li a:focus {
 	}
 }
 
-/* ------------------------------------------------------------------- 
- * tab about - (_layout.css)  
+/* -------------------------------------------------------------------
+ * tab about - (_layout.css)
  * ------------------------------------------------------------------- */
 .about-list {
 	margin-top: 1.2rem;
@@ -1452,9 +1450,9 @@ header .social-links ul li a:focus {
 	margin-bottom: 1.8rem;
 }
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * responsive:
- * tab about 
+ * tab about
  * ------------------------------------------------------------------- */
 @media only screen and (max-width:768px) {
 	.row .row.about-content {
@@ -1476,8 +1474,8 @@ header .social-links ul li a:focus {
 	}
 }
 
-/* ------------------------------------------------------------------- 
- * tab contact - (_layout.css)  
+/* -------------------------------------------------------------------
+ * tab contact - (_layout.css)
  * ------------------------------------------------------------------- */
 #tab-contact .form-field {
 	position: relative;
