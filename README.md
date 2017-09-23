@@ -16,7 +16,7 @@ A website of wteklabs.
 ## Instructions
 1. Clone the repository
     ```bash
-       $ git clone https://github.com/wteklabs/wteklabs.github.io.git
+       $ git clone https://github.com/wteklabs/wteklabs.github.io.git -b source
        $ cd wteklabs.github.io
     ```
 1. Install npm dependencies
